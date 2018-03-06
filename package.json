@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/kupibilet-frontend/build-version#readme",
   "dependencies": {
-    "shelljs": "^0.8.1"
+    "find-package-json": "^1.0.0",
+    "shelljs": "^0.8.1",
+    "slug": "^0.9.1"
   }
 }
