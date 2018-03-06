@@ -1,0 +1,19 @@
+{
+  "name": "build-version",
+  "version": "0.0.1",
+  "description": "Custom build version by branch name and commit hash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kupibilet-frontend/build-version.git"
+  },
+  "author": "Kupibilet team (http://kupibilet.ru)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kupibilet-frontend/build-version/issues"
+  },
+  "homepage": "https://github.com/kupibilet-frontend/build-version#readme"
+}
