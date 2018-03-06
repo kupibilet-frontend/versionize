@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kupibilet-frontend/build-version/issues"
   },
-  "homepage": "https://github.com/kupibilet-frontend/build-version#readme"
+  "homepage": "https://github.com/kupibilet-frontend/build-version#readme",
+  "dependencies": {
+    "shelljs": "^0.8.1"
+  }
 }
