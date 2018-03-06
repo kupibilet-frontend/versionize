@@ -1,6 +1,7 @@
+#!/usr/bin/env node
+
 const shell = require('shelljs')
 const slug = require('slug')
-const path = require('path')
 const finder = require('find-package-json')
 
 slug.charmap['/'] = '-'
@@ -8,7 +9,7 @@ slug.charmap['/'] = '-'
 const finding = finder()
 const { version } = finding.next().value
 
-const currentBranch = shell.exec("git rev-parse --abbrev-ref HEAD", { silent: true }).stdout
+const currentBranch = shell.exec('git rev-parse --abbrev-ref HEAD', { silent: true }).stdout
 const lastCommitHash = shell.exec("git log --pretty=format:'%h' -n 1", { silent: true }).stdout
 
 const slugRefBranch = slug(currentBranch).trim()
