@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kupibilet-frontend/build-version.git"
+    "url": "git+https://github.com/kupibilet-frontend/npm-build-version.git"
   },
   "author": "Kupibilet team (http://kupibilet.ru)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kupibilet-frontend/build-version/issues"
+    "url": "https://github.com/kupibilet-frontend/npm-build-version/issues"
   },
-  "homepage": "https://github.com/kupibilet-frontend/build-version#readme",
+  "homepage": "https://github.com/kupibilet-frontend/npm-build-version#readme",
   "dependencies": {
     "find-package-json": "^1.0.0",
     "shelljs": "^0.8.1",
