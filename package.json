@@ -1,9 +1,13 @@
 {
   "name": "versionize",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Custom package version by branch name and commit hash",
   "keywords": [
-    "npm", "version", "beta", "rc", "publish"
+    "npm",
+    "version",
+    "beta",
+    "rc",
+    "publish"
   ],
   "main": "index.js",
   "scripts": {
