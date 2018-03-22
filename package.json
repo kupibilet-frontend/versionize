@@ -1,24 +1,27 @@
 {
-  "name": "npm-build-version",
+  "name": "versionize",
   "version": "0.0.1",
-  "description": "Custom build version by branch name and commit hash",
+  "description": "Custom package version by branch name and commit hash",
+  "keywords": [
+    "npm", "version", "beta", "rc", "publish"
+  ],
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js"
   },
   "bin": {
-    "npm-build-version": "./index.js"
+    "versionize": "./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kupibilet-frontend/npm-build-version.git"
+    "url": "git+https://github.com/kupibilet-frontend/versionize.git"
   },
   "author": "Kupibilet team (http://kupibilet.ru)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kupibilet-frontend/npm-build-version/issues"
+    "url": "https://github.com/kupibilet-frontend/versionize/issues"
   },
-  "homepage": "https://github.com/kupibilet-frontend/npm-build-version#readme",
+  "homepage": "https://github.com/kupibilet-frontend/versionize#readme",
   "dependencies": {
     "find-package-json": "^1.0.0",
     "shelljs": "^0.8.1",

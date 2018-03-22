@@ -1,13 +1,24 @@
-# npm-build-version
+# versionize
+
+Small package that generate package version and run `npm version` based on current version, HEAD branch and commit hash.
+
+For example:
+
+`1.0.2-branch-name-6178a07d`
+
+It's usefull for publishing pre-version of package for test in production environments.
+
+
+
 
 ## Install
 
 ```sh
-yarn add npm-build-version --dev
+yarn add versionize --dev
 ```
 or
 ```sh
-npm i npm-build-version --save-dev
+npm i versionize --save-dev
 ```
 ## Usage
 
@@ -17,15 +28,19 @@ Add script into your npm scripts:
 {
   "name": "your-project",
   "scripts": {
-    "build-version": "npm-build-version"
+    "versionize": "versionize"
   }
 }
 ```
 
 Run
 
-```javascript
-yarn build-version
+```sh
+yarn versionize
+```
+or
+```sh
+npm run versionize
 ```
 
 ## License
