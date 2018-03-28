@@ -28,11 +28,11 @@
   "homepage": "https://github.com/kupibilet-frontend/versionize#readme",
   "dependencies": {
     "find-package-json": "^1.0.0",
+    "semver": "^5.5.0",
     "shelljs": "^0.8.1",
     "slug": "^0.9.1"
   },
   "devDependencies": {
-    "eslint-config-kupibilet": "^9.3.0",
-    "semver": "^5.5.0"
+    "eslint-config-kupibilet": "^9.3.0"
   }
 }
