@@ -1,6 +1,6 @@
 {
   "name": "versionize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom package version by branch name and commit hash",
   "keywords": [
     "npm",
