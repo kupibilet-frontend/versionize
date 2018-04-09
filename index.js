@@ -34,6 +34,9 @@ if (TRAVIS_BRANCH && TRAVIS_COMMIT) {
   lastCommitHash = shell.exec("git log --pretty=format:'%h' -n 1", { silent: true }).stdout
 }
 
+// Slicing first 8 symbols from commit hash for Travis ans GitLab
+lastCommitHash = lastCommitHash.slice(0, 8)
+
 const slugRefBranch = slug(currentBranch).trim()
 
 const buildVersion = `${validVersion}-${slugRefBranch}-${lastCommitHash}`
