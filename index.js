@@ -6,7 +6,7 @@ const finder = require('find-package-json')
 const semver = require('semver')
 
 const {
-  TRAVIS_BRANCH,
+  TRAVIS_PULL_REQUEST_BRANCH,
   TRAVIS_COMMIT,
   CI_COMMIT_REF_NAME,
   CI_COMMIT_SHA,
@@ -22,8 +22,8 @@ let currentBranch = ''
 let lastCommitHash = ''
 
 // For Travis environment
-if (TRAVIS_BRANCH && TRAVIS_COMMIT) {
-  currentBranch = TRAVIS_BRANCH
+if (TRAVIS_PULL_REQUEST_BRANCH && TRAVIS_COMMIT) {
+  currentBranch = TRAVIS_PULL_REQUEST_BRANCH
   lastCommitHash = TRAVIS_COMMIT
 // For GitLab environment
 } else if (CI_COMMIT_REF_NAME && CI_COMMIT_SHA) {
