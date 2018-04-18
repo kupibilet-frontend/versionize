@@ -19,4 +19,7 @@ const slugRefBranch = slug(currentBranch).trim()
 const buildVersion = `${validVersion}-${slugRefBranch}-${lastCommitHash}`
 
 shell.echo(`new version of package: ${buildVersion}`)
-shell.exec(`npm version ${buildVersion}`)
+
+const { code } = shell.exec(`npm version ${buildVersion}`)
+
+if (code) process.exit(code)
